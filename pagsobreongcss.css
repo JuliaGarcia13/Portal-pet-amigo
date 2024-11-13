@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FFA03F;
+    padding: 10px 20px; /* Ajuste o padding para um espaçamento uniforme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
+    max-width: 100%;
+}
+
+.logo img {
+    height: 80px; /* Ajuste a altura da logo conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Utilize flexbox para alinhar horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Margem horizontal para espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #004AAD;
+}
+
+.cor-cabecalho {
+    width: 100%;
+    height: 5vh;
+    background-color: #F8DEC2;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 2%;
+}
+
+.imagem-pagongs, #imagem-pagongs2{
+    margin-top: 5%;   
+    background-position: center ;
+    position: relative;
+    max-width: 100%;
+}
+
+.btn{
+    background-color: #004AAD;
+}
+.bntsobreongs, .btn{
+    
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 22%;
+    margin-top: -8%;
+    position:relative;
+   
+        
+}
+.btn :hover{
+    background-color: #B1D351 (0,0,0,0.8);
+}
+
+footer{
+    background-color: #004AAD;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 8%;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px; /* Ajuste a altura da logo para telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Altere a direção para coluna em telas menores */
+        align-items: center; /* Centralize os itens do menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Margem vertical em vez de horizontal */
+    }
+}

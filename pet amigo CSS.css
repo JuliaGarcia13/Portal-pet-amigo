@@ -1,0 +1,418 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FFA03F;
+    padding: 10px 20px; /* Ajuste o padding para um espaçamento uniforme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
+    max-width: 100%;
+}
+
+.logo img {
+    height: 80px; /* Ajuste a altura da logo conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Utilize flexbox para alinhar horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Margem horizontal para espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #004AAD;
+}
+
+.cor-cabecalho {
+    width: 100%;
+    height: 5vh;
+    background-color: #F8DEC2;
+    position: fixed;
+    z-index: 1000;
+    margin-top: -2%;
+}
+
+
+
+
+/*QUEM SOMOS*/
+
+#quem-somos {
+    border: 80px;
+    background-color: #FF8406;
+    margin-top: 8%;
+    
+}
+
+.titulo-quem-somos{
+    font-size: 5vw;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    color: white;
+    margin-left: 44%;
+    
+}
+
+.dog-quem-somos{
+    width: 25%;
+    position:relative;
+
+    
+    
+    
+}
+
+.texto-quem-somos{
+    width: 60%;
+    margin-left: 8%;
+    margin-top: 2%;
+ 
+}
+
+/*fim QUEM SOMOS*/
+
+
+/*INFORMATIVO*/
+
+.imagem-inicio, #imagem-inicio2 {
+    margin-top: 3%;   
+    background-position: center ;
+    position: relative;
+    max-width: 100%;
+}
+
+/*fim INFORMATIVO*/
+
+/*carrossel*/
+.carrossel {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrossel-item img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*fim carrossel*/
+
+/*como contribuir*/
+.informacao-contribuir {
+    text-align: center; /* Centraliza o texto */
+}
+#titulo-como-contribuir{
+    font-size: 5vw;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    color: #004AAD;
+    margin-top: 90px;
+}
+
+.contribuir {
+    display: flex; /* Usar flexbox para alinhar as imagens lado a lado */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 30px; /* Espaço entre as imagens */
+    overflow: auto; /* Permite rolagem se o conteúdo exceder a largura */
+}
+
+.contribuir img {
+    max-width: 100%; /* Mantém as imagens responsivas */
+    height: auto; /* Mantém a proporção das imagens */
+    flex: 0 0 auto; /* Não permite que as imagens encolham */
+    width: 20%; /* Largura fixa das imagens, ajuste conforme necessário */
+    margin-top: 5%;
+}
+
+/*fim como contribuir*/
+
+/*PAGINA DE ONGS E ABRIGOS*/
+#ongs-abrigos{
+    position: relative;
+    display: flexbox;
+    align-items: center;
+}
+.titulo-ongs{
+    position:relative;
+    display: flexbox; 
+    align-items: center;
+    color: #004AAD;
+    font-size: 60px;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    margin-top: 5%;   
+}
+
+.pai{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 2%;
+}
+
+.ong1, .ong2, .ong3{
+    border-radius: 20px;
+    background-color: #F8DEC2;
+    padding: 18px 10px;
+    box-shadow: 15px 20px 20px 0px rgba(0,0,0,0.2);
+    max-width: 100%;
+    width: 25%;
+    align-items: center;
+}
+.img1, .img2, .img3{
+    width: 40vh;
+    align-items: center;
+    display: flexbox;
+    margin-left: 9%;
+}
+.h2-ong1, .h2-ong2, .h2-ong3{
+    font-size:25px;
+    align-items: center;
+    display: flex;
+    margin-left: 8%;
+}
+
+
+
+.mae{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 2%;
+}
+
+.ong4, .ong5, .ong6{
+    border-radius: 20px;
+    background-color: #F8DEC2;
+    padding: 18px 10px;
+    box-shadow: 15px 20px 20px 0px rgba(0,0,0,0.2);
+    max-width: 100%;
+    width: 25%;
+    align-items: center;
+}
+.img4, .img5, .img6{
+    width: 40vh;
+    align-items: center;
+    display: flexbox;
+    margin-left: 9%;
+}
+.h2-ong4, .h2-ong5, .h2-ong6{
+    font-size:25px;
+    margin-left: 8%;
+}
+.btn{
+    display: inline-block;
+    background-color: #004AAD;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    margin-left: 8%;
+    
+}
+
+.btn :hover{
+    background-color: #B1D351;
+}
+
+
+.municipio {
+    margin-left: 3%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 3%;
+    
+}
+
+
+
+
+.cor{
+    width: 100%;
+    height:  5vh;
+    background-color: #F8DEC2;
+    
+}
+
+/*fim PAGINA DE ONGS E ABRIGOS*/
+
+/*cadastro ong*/
+#titulo-form{
+    font-size: 50px;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+    color: white;
+    margin-top: 35px;
+    align-items: center;
+}
+.formulario{
+    background-color: #FF8406;
+   position: relative;
+    align-items: center;
+    text-align: center;
+   
+   }
+
+   #form{
+    width: 300px;
+    height: 30px;
+   }
+
+   input{
+    align-items: center;
+   }
+
+   .dogform1{
+    margin-top: -30%;
+    width: 30%;
+    height: 5%;
+    display: flex;
+    position: relative;
+    z-index: 10;
+   }
+/*fim cadastro ong*/
+
+/*DUVIDAS*/
+
+#fundo{
+    max-width: 100%;
+    
+    }
+ 
+    
+    .titulo1-duvidas{
+        position: relative;
+       margin-top: -44%;
+        margin-left: 10%;
+        text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+        color: #004AAD;
+        font-size: 50px;
+    }
+    
+    .titulo2-duvidas{
+        position:relative;
+        margin-left: 10%;
+        margin-top: 3%;
+        text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+        color: #f6f8fa;
+        font-size: 35px;
+    }
+    
+    .titulo3-duvidas{
+        color: #FFFFFF;
+        position:relative;
+       
+        margin-left: 17%;
+        font-size: 35px;
+        text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+        
+    }
+    .titulo4-duvidas{
+        color: #FFFFFF;
+        position:relative;
+        
+        margin-left: 22%;
+        font-size: 35px;
+        text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+       
+    }
+    
+    .titulo5-duvidas{
+        color: #004AAD;
+        position:relative;
+        margin-top: 5%;
+        margin-left: 35%;
+        font-size: 35px;
+        text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    
+/*fim DUVIDAS*/
+
+video{
+    position: relative;
+    margin-top: 15%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+footer{
+    background-color: #004AAD;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 3%;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px; /* Ajuste a altura da logo para telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Altere a direção para coluna em telas menores */
+        align-items: center; /* Centralize os itens do menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Margem vertical em vez de horizontal */
+    }
+}
